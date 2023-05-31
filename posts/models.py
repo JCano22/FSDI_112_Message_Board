@@ -8,6 +8,7 @@ class Post(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
 
+    # method to show correct title in db instead of Object1... title
     def __str__(self):
         return self.title
 
